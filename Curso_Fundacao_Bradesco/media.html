@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Vamos ver sua media.</h3>
+    <script language="javascript">
+
+        parcial = window.prompt("Digite sua nota parcial: ")
+        bimestral = window.prompt("Digite sua nota bimestral: ")
+        media = (parseFloat(parcial)+parseFloat(bimestral))/2;
+
+        if (media < 7) {
+            document.write("Sua média ficou: "+ media + ".<br><h1>Situação: RECUPERACAO</h1>");
+        }
+        else {
+            document.write("Sua média ficou " + media + ".<br><h1>Situacao: Parabens, voce passou.</h1>");
+        }
+
+    </script>
+</body>
+</html>
